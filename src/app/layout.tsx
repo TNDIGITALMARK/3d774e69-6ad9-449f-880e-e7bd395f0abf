@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Singh Tech - Professional Web Design & AI Integration Services",
+  description: "Transform your business with expert web design and AI-powered solutions. 5+ years of experience delivering custom websites, AI chatbots, predictive analytics, and more.",
 };
 
 export default function RootLayout({
