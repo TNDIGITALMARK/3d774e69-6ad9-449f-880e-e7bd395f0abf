@@ -48,7 +48,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
                 href="/portfolio"
-                className="group inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="group inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-light px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 View Portfolio
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
