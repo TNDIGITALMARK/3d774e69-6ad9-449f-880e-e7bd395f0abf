@@ -497,74 +497,66 @@ button:disabled, .btn:disabled {
 
 /*
 ============================================
-CRITICAL: ALL BLUE BUTTONS GET WHITE TEXT
+FIX: OVERRIDE TAILWIND BASE LAYER color:inherit
 ============================================
-This rule ensures that ANY blue button variant
-(primary, cyan, sky, info, etc.) ALWAYS has white text
+ROOT CAUSE IDENTIFIED:
+  Tailwind CSS v4's @layer base includes:
+    button, input, select, textarea { color: inherit; }
+
+  This means buttons inherit their text color from parents,
+  which OVERRIDES utility classes like .text-primary-foreground
+  because the base layer selector has higher specificity.
+
+SOLUTION:
+  Use attribute selectors with !important to force color utilities
+  to work properly on buttons and links. The attribute selector
+  [class*="text-"] targets any element with a text color class.
 */
 
-/* Primary blue buttons - white text */
-button[class*="bg-primary"],
-button[class*="bg-blue"],
-button[class*="bg-cyan"],
-button[class*="bg-sky"],
-button[class*="bg-info"],
-.btn[class*="bg-primary"],
-.btn[class*="bg-blue"],
-.btn[class*="bg-cyan"],
-.btn[class*="bg-sky"],
-.btn[class*="bg-info"] {
-  color: #FFFFFF !important;
+/*
+  CRITICAL FIX: Force text-* utility classes to work on buttons and links
+  by explicitly setting color values with !important
+*/
+
+/* Primary foreground color - WHITE on blue buttons */
+button[class*="text-primary-foreground"],
+a[class*="text-primary-foreground"] {
+  color: hsl(var(--primary-foreground)) !important;
 }
 
-/* Variant classes for blue buttons */
-button[class*="variant-default"],
-button[class*="variant-primary"],
-.btn[class*="variant-default"],
-.btn[class*="variant-primary"] {
-  background-color: hsl(var(--primary));
-  color: #FFFFFF !important;
+/* White text color */
+button[class*="text-white"],
+a[class*="text-white"] {
+  color: var(--color-white) !important;
 }
 
-/* Hover states maintain white text */
-button[class*="bg-primary"]:hover,
-button[class*="bg-blue"]:hover,
-button[class*="bg-cyan"]:hover,
-button[class*="bg-sky"]:hover,
-button[class*="bg-info"]:hover,
-.btn[class*="bg-primary"]:hover,
-.btn[class*="bg-blue"]:hover,
-.btn[class*="bg-cyan"]:hover,
-.btn[class*="bg-sky"]:hover,
-.btn[class*="bg-info"]:hover {
-  color: #FFFFFF !important;
+/* Secondary foreground color */
+button[class*="text-secondary-foreground"],
+a[class*="text-secondary-foreground"] {
+  color: hsl(var(--secondary-foreground)) !important;
 }
 
-/* Focus states maintain white text */
-button[class*="bg-primary"]:focus,
-button[class*="bg-blue"]:focus,
-button[class*="bg-cyan"]:focus,
-button[class*="bg-sky"]:focus,
-button[class*="bg-info"]:focus,
-.btn[class*="bg-primary"]:focus,
-.btn[class*="bg-blue"]:focus,
-.btn[class*="bg-cyan"]:focus,
-.btn[class*="bg-sky"]:focus,
-.btn[class*="bg-info"]:focus {
-  color: #FFFFFF !important;
+/* Destructive foreground color */
+button[class*="text-destructive-foreground"],
+a[class*="text-destructive-foreground"] {
+  color: hsl(var(--destructive-foreground)) !important;
 }
 
-/* Active states maintain white text */
-button[class*="bg-primary"]:active,
-button[class*="bg-blue"]:active,
-button[class*="bg-cyan"]:active,
-button[class*="bg-sky"]:active,
-button[class*="bg-info"]:active,
-.btn[class*="bg-primary"]:active,
-.btn[class*="bg-blue"]:active,
-.btn[class*="bg-cyan"]:active,
-.btn[class*="bg-sky"]:active,
-.btn[class*="bg-info"]:active {
+/* Accent foreground color */
+button[class*="text-accent-foreground"],
+a[class*="text-accent-foreground"] {
+  color: hsl(var(--accent-foreground)) !important;
+}
+
+/* Muted foreground color */
+button[class*="text-muted-foreground"],
+a[class*="text-muted-foreground"] {
+  color: hsl(var(--muted-foreground)) !important;
+}
+
+/* Light text classes (for dark backgrounds) */
+button[class*="text-light"],
+a[class*="text-light"] {
   color: #FFFFFF !important;
 }
 
