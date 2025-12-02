@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Send, Sparkles } from 'lucide-react'
 
 export function ContactSection() {
   return (
-    <section className="relative py-24 md:py-32 bg-gradient-hero text-secondary-foreground overflow-hidden">
+    <section className="relative py-24 md:py-32 bg-gradient-hero text-light overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-10 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />

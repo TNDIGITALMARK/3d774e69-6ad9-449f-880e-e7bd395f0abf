@@ -379,6 +379,87 @@ p, .text-body {
   background-clip: text;
 }
 
+/*
+============================================
+LIGHT TEXT CLASSES FOR DARK BACKGROUNDS
+============================================
+Use these classes when text appears on dark backgrounds
+to ensure proper contrast and readability
+*/
+
+/* Primary light text - Pure white for maximum contrast */
+.text-light {
+  color: #FFFFFF;
+}
+
+.text-light-primary {
+  color: #FFFFFF;
+}
+
+/* Secondary light text - Slightly dimmed white */
+.text-light-secondary {
+  color: rgba(255, 255, 255, 0.90);
+}
+
+/* Muted light text - For supporting content on dark backgrounds */
+.text-light-muted {
+  color: rgba(255, 255, 255, 0.70);
+}
+
+/* Subtle light text - For less important content */
+.text-light-subtle {
+  color: rgba(255, 255, 255, 0.60);
+}
+
+/* Caption light text - For small labels on dark backgrounds */
+.text-light-caption {
+  color: rgba(255, 255, 255, 0.80);
+}
+
+/* Display Text - Light variant for dark backgrounds */
+h1.text-light, .text-display.text-light {
+  color: #FFFFFF;
+}
+
+/* Heading variants for dark backgrounds */
+h2.text-light, .text-heading-lg.text-light {
+  color: #FFFFFF;
+}
+
+h3.text-light, .text-heading-md.text-light {
+  color: #FFFFFF;
+}
+
+h4.text-light, .text-heading-sm.text-light {
+  color: #FFFFFF;
+}
+
+h5.text-light, h6.text-light, .text-heading-xs.text-light {
+  color: #FFFFFF;
+}
+
+/* Body text light variants */
+p.text-light, .text-body.text-light {
+  color: rgba(255, 255, 255, 0.90);
+}
+
+.text-body-lg.text-light {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.text-body-sm.text-light {
+  color: rgba(255, 255, 255, 0.80);
+}
+
+.text-caption.text-light {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Lead text light variant */
+.lead.text-light {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 /* Lead Text - Introduction Paragraphs */
 .lead {
   font-size: 1.25rem; /* 20px */

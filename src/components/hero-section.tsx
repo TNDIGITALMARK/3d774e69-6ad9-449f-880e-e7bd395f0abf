@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles } from 'lucide-react'
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-hero text-secondary-foreground py-24 md:py-32 lg:py-40 overflow-hidden">
+    <section className="relative bg-gradient-hero text-light py-24 md:py-32 lg:py-40 overflow-hidden">
       {/* Animated gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 opacity-50" />
 
