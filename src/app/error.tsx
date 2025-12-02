@@ -8,7 +8,7 @@ export default function Error() {
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4">500 - Server Error</h1>
         <p className="text-xl mb-4">Something went wrong. Please try again later.</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
+        <a href="/" className="text-primary hover:text-primary-hover underline">
           Return to Home
         </a>
       </div>
