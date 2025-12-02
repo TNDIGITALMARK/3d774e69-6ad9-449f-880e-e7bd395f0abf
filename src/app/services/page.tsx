@@ -294,8 +294,8 @@ export default function ServicesPage() {
                   href="/contact"
                   className={`block text-center px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 ${
                     tier.highlighted
-                      ? 'bg-white text-primary hover:bg-gray-100'
-                      : 'bg-primary text-primary-foreground hover:bg-primary-hover'
+                      ? 'bg-accent hover:bg-accent/90 text-white'
+                      : 'bg-primary text-white hover:bg-primary-hover'
                   }`}
                 >
                   Get Started

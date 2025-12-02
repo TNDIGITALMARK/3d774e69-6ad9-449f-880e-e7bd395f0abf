@@ -137,7 +137,7 @@ export function ServicesSection() {
             </p>
             <a
               href="/contact"
-              className="inline-flex items-center gap-2 bg-white hover:bg-white/90 text-[#0F172A] px-8 py-4 rounded-xl font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Schedule a Free Consultation
               <Sparkles className="w-5 h-5" />
