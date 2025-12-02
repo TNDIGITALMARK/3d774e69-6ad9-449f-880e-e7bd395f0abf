@@ -75,7 +75,7 @@ export function PortfolioPreview() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
 
                   {/* Category badge */}
-                  <div className="absolute top-4 left-4 px-3 py-1.5 glass rounded-full text-xs font-bold text-white border border-white/30">
+                  <div className="absolute top-4 left-4 px-3 py-1.5 glass rounded-full text-xs font-bold text-light border border-white/30">
                     {project.category}
                   </div>
 
@@ -89,7 +89,7 @@ export function PortfolioPreview() {
                 <div className="p-6 space-y-4">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                      <IconComponent className="w-6 h-6 text-white" />
+                      <IconComponent className="w-6 h-6 text-light" />
                     </div>
                     <div className="flex-1">
                       <h3 className="font-bold text-card-foreground text-lg group-hover:text-primary transition-colors">
@@ -126,7 +126,7 @@ export function PortfolioPreview() {
         <div className="text-center">
           <Link
             href="/portfolio"
-            className="group inline-flex items-center gap-3 bg-gradient-primary hover:shadow-xl text-white px-10 py-4 rounded-xl font-bold transition-all duration-300 hover:scale-105"
+            className="group inline-flex items-center gap-3 bg-gradient-primary hover:shadow-xl text-light px-10 py-4 rounded-xl font-bold transition-all duration-300 hover:scale-105"
           >
             View All Projects
             <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

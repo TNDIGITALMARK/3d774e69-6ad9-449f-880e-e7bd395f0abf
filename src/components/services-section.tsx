@@ -62,8 +62,8 @@ export function ServicesSection() {
               WHAT WE DO
             </span>
           </div>
-          <h2 className="text-white">OUR SERVICES</h2>
-          <p className="text-body-lg text-white/80 max-w-3xl mx-auto">
+          <h2 className="text-light">OUR SERVICES</h2>
+          <p className="text-body-lg text-light-muted max-w-3xl mx-auto">
             Comprehensive digital solutions powered by cutting-edge technology and innovative design thinking
           </p>
         </div>
@@ -84,13 +84,13 @@ export function ServicesSection() {
                   {/* Icon and title */}
                   <div className="flex items-start gap-4">
                     <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow flex-shrink-0">
-                      <IconComponent className="w-7 h-7 text-white" />
+                      <IconComponent className="w-7 h-7 text-light" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary-light transition-colors">
+                      <h3 className="text-xl font-bold text-light mb-2 group-hover:text-primary-light transition-colors">
                         {service.category}
                       </h3>
-                      <p className="text-sm text-white/70 leading-relaxed">
+                      <p className="text-sm text-light-muted leading-relaxed">
                         {service.description}
                       </p>
                     </div>
@@ -101,13 +101,13 @@ export function ServicesSection() {
                     {service.items.map((item) => (
                       <li key={item.title} className="flex items-start gap-3 group/item">
                         <div className="mt-1 flex-shrink-0">
-                          <CheckCircle2 className="w-5 h-5 text-primary-light group-hover/item:text-white transition-colors" />
+                          <CheckCircle2 className="w-5 h-5 text-primary-light group-hover/item:text-light transition-colors" />
                         </div>
                         <div>
-                          <div className="font-semibold text-white group-hover/item:text-primary-light transition-colors">
+                          <div className="font-semibold text-light group-hover/item:text-primary-light transition-colors">
                             {item.title}
                           </div>
-                          <div className="text-sm text-white/60 mt-0.5">
+                          <div className="text-sm text-light-subtle mt-0.5">
                             {item.description}
                           </div>
                         </div>
@@ -128,11 +128,11 @@ export function ServicesSection() {
           <div className="glass rounded-card-lg p-10 max-w-3xl mx-auto border border-white/20">
             <div className="flex items-center justify-center gap-2 mb-4">
               <TrendingUp className="w-6 h-6 text-primary-light" />
-              <h3 className="text-2xl font-bold text-white">
+              <h3 className="text-2xl font-bold text-light">
                 Ready to Transform Your Business?
               </h3>
             </div>
-            <p className="text-white/80 mb-6 text-lg">
+            <p className="text-light-muted mb-6 text-lg">
               Let's discuss how we can help you achieve your digital goals with our expert services
             </p>
             <a

@@ -19,27 +19,27 @@ export function HeroSection() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/20 backdrop-blur-sm">
               <Sparkles className="w-4 h-4 text-primary-light" />
-              <span className="text-sm font-semibold text-white/90 tracking-wide">
+              <span className="text-sm font-semibold text-light-secondary tracking-wide">
                 5+ Years of Excellence
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
-              <h1 className="text-white leading-tight">
+              <h1 className="text-light leading-tight">
                 <span className="block text-gradient-primary">
                   PROFESSIONAL
                 </span>
                 <span className="block">
                   WEB DESIGN
                 </span>
-                <span className="block text-white/90">
+                <span className="block text-light-secondary">
                   SERVICES
                 </span>
               </h1>
 
               {/* Subheadline */}
-              <p className="text-xl md:text-2xl text-white/80 font-light leading-relaxed max-w-xl">
+              <p className="text-xl md:text-2xl text-light-muted font-light leading-relaxed max-w-xl">
                 Empowering businesses with cutting-edge digital solutions and innovative design strategies
               </p>
             </div>
@@ -55,7 +55,7 @@ export function HeroSection() {
               </Link>
               <Link
                 href="/contact"
-                className="group inline-flex items-center justify-center gap-2 glass hover:bg-white/15 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 border border-white/30 hover:border-white/50"
+                className="group inline-flex items-center justify-center gap-2 glass hover:bg-white/15 text-light px-8 py-4 rounded-xl font-semibold transition-all duration-300 border border-white/30 hover:border-white/50"
               >
                 Get Started
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -65,18 +65,18 @@ export function HeroSection() {
             {/* Trust Indicators */}
             <div className="flex items-center gap-8 pt-8 border-t border-white/10">
               <div>
-                <div className="text-3xl font-bold text-white">50+</div>
-                <div className="text-sm text-white/70">Projects Delivered</div>
+                <div className="text-3xl font-bold text-light">50+</div>
+                <div className="text-sm text-light-muted">Projects Delivered</div>
               </div>
               <div className="h-12 w-px bg-white/20" />
               <div>
-                <div className="text-3xl font-bold text-white">100%</div>
-                <div className="text-sm text-white/70">Client Satisfaction</div>
+                <div className="text-3xl font-bold text-light">100%</div>
+                <div className="text-sm text-light-muted">Client Satisfaction</div>
               </div>
               <div className="h-12 w-px bg-white/20" />
               <div>
-                <div className="text-3xl font-bold text-white">24/7</div>
-                <div className="text-sm text-white/70">Support Available</div>
+                <div className="text-3xl font-bold text-light">24/7</div>
+                <div className="text-sm text-light-muted">Support Available</div>
               </div>
             </div>
           </div>
@@ -101,11 +101,11 @@ export function HeroSection() {
               <div className="absolute bottom-6 left-6 glass rounded-xl p-4 z-20 animate-fade-in">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                    <Sparkles className="w-6 h-6 text-white" />
+                    <Sparkles className="w-6 h-6 text-light" />
                   </div>
                   <div>
-                    <div className="text-white font-bold text-lg">AI Powered</div>
-                    <div className="text-white/70 text-sm">Smart Solutions</div>
+                    <div className="text-light font-bold text-lg">AI Powered</div>
+                    <div className="text-light-muted text-sm">Smart Solutions</div>
                   </div>
                 </div>
               </div>

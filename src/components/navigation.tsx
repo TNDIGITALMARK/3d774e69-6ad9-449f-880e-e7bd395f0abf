@@ -38,7 +38,7 @@ export function Navigation() {
           {/* Logo with gradient effect */}
           <Link href="/" className="group flex items-center gap-2 transition-all">
             <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-              <Sparkles className="w-5 h-5 text-white" />
+              <Sparkles className="w-5 h-5 text-light" />
             </div>
             <span className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">
               Singh Tech
@@ -61,7 +61,7 @@ export function Navigation() {
             {/* CTA Button */}
             <Link
               href="/contact"
-              className="ml-4 px-6 py-2.5 bg-gradient-primary text-white font-semibold rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300"
+              className="ml-4 px-6 py-2.5 bg-gradient-primary text-light font-semibold rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
               Get Started
             </Link>
@@ -92,7 +92,7 @@ export function Navigation() {
             ))}
             <Link
               href="/contact"
-              className="block mt-4 px-4 py-3 bg-gradient-primary text-white font-semibold rounded-xl text-center"
+              className="block mt-4 px-4 py-3 bg-gradient-primary text-light font-semibold rounded-xl text-center"
               onClick={() => setIsOpen(false)}
             >
               Get Started

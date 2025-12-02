@@ -16,14 +16,14 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center shadow-lg">
-                <Sparkles className="w-5 h-5 text-white" />
+                <Sparkles className="w-5 h-5 text-light" />
               </div>
-              <h3 className="text-2xl font-bold text-white">Singh Tech</h3>
+              <h3 className="text-2xl font-bold text-light">Singh Tech</h3>
             </div>
-            <p className="text-white/70 mb-6 leading-relaxed max-w-md">
+            <p className="text-light-muted mb-6 leading-relaxed max-w-md">
               Professional web design and AI integration services with 5+ years of expertise in creating custom solutions that transform businesses and drive results.
             </p>
-            <div className="flex items-center gap-2 text-white/60 text-sm">
+            <div className="flex items-center gap-2 text-light-subtle text-sm">
               <span className="px-3 py-1 bg-white/10 rounded-full font-semibold">Est. 2019</span>
               <span>•</span>
               <span>Made with</span>
@@ -34,34 +34,34 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6">Quick Links</h4>
+            <h4 className="text-lg font-bold text-light mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-white/70 hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
+                <Link href="/" className="text-light-muted hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
                   <span className="w-0 h-0.5 bg-primary-light group-hover:w-4 transition-all duration-300"></span>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="text-white/70 hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
+                <Link href="/portfolio" className="text-light-muted hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
                   <span className="w-0 h-0.5 bg-primary-light group-hover:w-4 transition-all duration-300"></span>
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-white/70 hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
+                <Link href="/services" className="text-light-muted hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
                   <span className="w-0 h-0.5 bg-primary-light group-hover:w-4 transition-all duration-300"></span>
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-white/70 hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
+                <Link href="/about" className="text-light-muted hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
                   <span className="w-0 h-0.5 bg-primary-light group-hover:w-4 transition-all duration-300"></span>
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-white/70 hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
+                <Link href="/contact" className="text-light-muted hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
                   <span className="w-0 h-0.5 bg-primary-light group-hover:w-4 transition-all duration-300"></span>
                   Contact
                 </Link>
@@ -71,38 +71,38 @@ export function Footer() {
 
           {/* Social Links */}
           <div>
-            <h4 className="text-lg font-bold text-white mb-6">Connect With Us</h4>
+            <h4 className="text-lg font-bold text-light mb-6">Connect With Us</h4>
             <div className="flex flex-wrap gap-3 mb-6">
               <a
                 href="#"
                 className="w-12 h-12 rounded-xl glass hover:bg-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/20"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-5 h-5 text-white" />
+                <Linkedin className="w-5 h-5 text-light" />
               </a>
               <a
                 href="#"
                 className="w-12 h-12 rounded-xl glass hover:bg-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/20"
                 aria-label="Twitter"
               >
-                <Twitter className="w-5 h-5 text-white" />
+                <Twitter className="w-5 h-5 text-light" />
               </a>
               <a
                 href="#"
                 className="w-12 h-12 rounded-xl glass hover:bg-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/20"
                 aria-label="GitHub"
               >
-                <Github className="w-5 h-5 text-white" />
+                <Github className="w-5 h-5 text-light" />
               </a>
               <a
                 href="mailto:contact@singhtech.com"
                 className="w-12 h-12 rounded-xl glass hover:bg-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 border border-white/20"
                 aria-label="Email"
               >
-                <Mail className="w-5 h-5 text-white" />
+                <Mail className="w-5 h-5 text-light" />
               </a>
             </div>
-            <p className="text-white/60 text-sm">
+            <p className="text-light-subtle text-sm">
               Follow us for updates, tips, and insights
             </p>
           </div>
@@ -110,19 +110,19 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/60 text-sm font-medium">
+          <p className="text-light-subtle text-sm font-medium">
             © {currentYear} Singh Tech. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <Link href="#" className="text-white/60 hover:text-primary-light transition-colors font-medium">
+            <Link href="#" className="text-light-subtle hover:text-primary-light transition-colors font-medium">
               Privacy Policy
             </Link>
-            <span className="text-white/30">•</span>
-            <Link href="#" className="text-white/60 hover:text-primary-light transition-colors font-medium">
+            <span className="text-light-subtle opacity-50">•</span>
+            <Link href="#" className="text-light-subtle hover:text-primary-light transition-colors font-medium">
               Terms of Service
             </Link>
-            <span className="text-white/30">•</span>
-            <Link href="#" className="text-white/60 hover:text-primary-light transition-colors font-medium">
+            <span className="text-light-subtle opacity-50">•</span>
+            <Link href="#" className="text-light-subtle hover:text-primary-light transition-colors font-medium">
               Cookie Policy
             </Link>
           </div>

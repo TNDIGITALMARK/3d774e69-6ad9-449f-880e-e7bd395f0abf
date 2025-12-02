@@ -111,7 +111,7 @@ export function TestimonialsSection() {
                 >
                   <div className="flex justify-center mb-4">
                     <div className="w-16 h-16 rounded-xl bg-gradient-primary flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-                      <IconComponent className="w-8 h-8 text-white" />
+                      <IconComponent className="w-8 h-8 text-light" />
                     </div>
                   </div>
                   <div className="text-5xl font-black text-gradient-primary mb-3">
