@@ -146,7 +146,7 @@ export default function AboutPage() {
                   className="bg-card rounded-xl p-8 shadow-lg border border-border hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mb-4 shadow-md">
-                    <IconComponent className="w-7 h-7 text-white" />
+                    <IconComponent className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h3 className="text-xl font-semibold text-card-foreground mb-3">{value.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{value.description}</p>
@@ -204,7 +204,7 @@ export default function AboutPage() {
             </a>
             <a
               href="/contact"
-              className="inline-block bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              className="inline-block bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               Start a Project
             </a>

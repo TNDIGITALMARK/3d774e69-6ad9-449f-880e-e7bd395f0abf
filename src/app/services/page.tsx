@@ -178,7 +178,7 @@ export default function ServicesPage() {
                 >
                   <div className="flex items-start gap-4 mb-6">
                     <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center flex-shrink-0 shadow-md">
-                      <IconComponent className="w-6 h-6 text-white" />
+                      <IconComponent className="w-6 h-6 text-primary-foreground" />
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-card-foreground mb-2">
@@ -218,7 +218,7 @@ export default function ServicesPage() {
               return (
                 <div key={benefit.title} className="text-center">
                   <div className="w-16 h-16 rounded-full bg-primary mx-auto mb-4 flex items-center justify-center shadow-lg">
-                    <IconComponent className="w-8 h-8 text-white" />
+                    <IconComponent className="w-8 h-8 text-primary-foreground" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">{benefit.title}</h3>
                   <p className="text-sm text-muted-foreground">{benefit.description}</p>
@@ -245,27 +245,27 @@ export default function ServicesPage() {
                 key={tier.name}
                 className={`rounded-xl p-8 ${
                   tier.highlighted
-                    ? 'bg-primary text-white border-2 border-primary shadow-2xl transform scale-105'
+                    ? 'bg-primary text-primary-foreground border-2 border-primary shadow-2xl transform scale-105'
                     : 'bg-card border border-border shadow-lg hover:shadow-xl transition-shadow duration-300'
                 }`}
               >
                 <h3
                   className={`text-2xl font-bold mb-2 ${
-                    tier.highlighted ? 'text-white' : 'text-card-foreground'
+                    tier.highlighted ? 'text-primary-foreground' : 'text-card-foreground'
                   }`}
                 >
                   {tier.name}
                 </h3>
                 <div
                   className={`text-3xl font-bold mb-4 ${
-                    tier.highlighted ? 'text-white' : 'text-primary'
+                    tier.highlighted ? 'text-primary-foreground' : 'text-primary'
                   }`}
                 >
                   {tier.price}
                 </div>
                 <p
                   className={`mb-6 ${
-                    tier.highlighted ? 'text-white/90' : 'text-muted-foreground'
+                    tier.highlighted ? 'text-primary-foreground/90' : 'text-muted-foreground'
                   }`}
                 >
                   {tier.description}
@@ -276,12 +276,12 @@ export default function ServicesPage() {
                     <li key={feature} className="flex items-start gap-2">
                       <CheckCircle2
                         className={`w-5 h-5 flex-shrink-0 ${
-                          tier.highlighted ? 'text-white' : 'text-primary'
+                          tier.highlighted ? 'text-primary-foreground' : 'text-primary'
                         }`}
                       />
                       <span
                         className={`text-sm ${
-                          tier.highlighted ? 'text-white' : 'text-card-foreground'
+                          tier.highlighted ? 'text-primary-foreground' : 'text-card-foreground'
                         }`}
                       >
                         {feature}
@@ -295,7 +295,7 @@ export default function ServicesPage() {
                   className={`block text-center px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 ${
                     tier.highlighted
                       ? 'bg-white text-primary hover:bg-gray-100'
-                      : 'bg-primary text-white hover:bg-primary-hover'
+                      : 'bg-primary text-primary-foreground hover:bg-primary-hover'
                   }`}
                 >
                   Get Started
@@ -319,7 +319,7 @@ export default function ServicesPage() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+            className="inline-block bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
           >
             Schedule Consultation
           </a>

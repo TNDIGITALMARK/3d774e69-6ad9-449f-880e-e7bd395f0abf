@@ -176,7 +176,7 @@ export default function PortfolioPage() {
               return (
                 <div key={index} className="text-center">
                   <div className="w-16 h-16 rounded-full bg-primary mx-auto mb-4 flex items-center justify-center shadow-lg">
-                    <IconComponent className="w-8 h-8 text-white" />
+                    <IconComponent className="w-8 h-8 text-primary-foreground" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
                   <p className="text-muted-foreground">{step.description}</p>
@@ -200,7 +200,7 @@ export default function PortfolioPage() {
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-primary-foreground px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
           >
             Get in Touch
             <ArrowUpRight className="w-5 h-5" />
