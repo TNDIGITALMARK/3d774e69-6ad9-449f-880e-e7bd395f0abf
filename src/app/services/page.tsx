@@ -138,11 +138,18 @@ export default function ServicesPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-secondary text-secondary-foreground py-20">
-        <div className="container mx-auto px-6">
+      <section className="relative bg-gradient-hero text-light py-24 md:py-28 overflow-hidden">
+        {/* Animated gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 opacity-50" />
+
+        {/* Decorative elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-white mb-6">AI Integration Services</h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <h1 className="text-light mb-6">AI Integration Services</h1>
+            <p className="text-xl text-light-muted leading-relaxed">
               Transform your business with intelligent automation and AI-powered features. We specialize in
               integrating cutting-edge artificial intelligence into web applications to boost efficiency,
               enhance user experience, and drive growth.
@@ -167,10 +174,10 @@ export default function ServicesPage() {
               return (
                 <div
                   key={service.title}
-                  className="bg-card rounded-lg p-8 shadow-md border border-border hover:shadow-lg transition-shadow"
+                  className="bg-card rounded-xl p-8 shadow-lg border border-border hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="flex items-start gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center flex-shrink-0 shadow-md">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -210,7 +217,7 @@ export default function ServicesPage() {
               const IconComponent = benefit.icon
               return (
                 <div key={benefit.title} className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-primary mx-auto mb-4 flex items-center justify-center shadow-lg">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">{benefit.title}</h3>
@@ -236,10 +243,10 @@ export default function ServicesPage() {
             {pricingTiers.map((tier) => (
               <div
                 key={tier.name}
-                className={`rounded-lg p-8 ${
+                className={`rounded-xl p-8 ${
                   tier.highlighted
-                    ? 'bg-primary text-white border-2 border-primary shadow-xl transform scale-105'
-                    : 'bg-card border border-border'
+                    ? 'bg-primary text-white border-2 border-primary shadow-2xl transform scale-105'
+                    : 'bg-card border border-border shadow-lg hover:shadow-xl transition-shadow duration-300'
                 }`}
               >
                 <h3
@@ -285,10 +292,10 @@ export default function ServicesPage() {
 
                 <a
                   href="/contact"
-                  className={`block text-center px-6 py-3 rounded-md font-medium transition-colors ${
+                  className={`block text-center px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 ${
                     tier.highlighted
                       ? 'bg-white text-primary hover:bg-gray-100'
-                      : 'bg-primary text-white hover:bg-primary/90'
+                      : 'bg-primary text-white hover:bg-primary-hover'
                   }`}
                 >
                   Get Started
@@ -300,15 +307,19 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-secondary text-secondary-foreground">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-white mb-6">Ready to Integrate AI Into Your Business?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+      <section className="relative bg-gradient-hero text-light py-24 overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-10 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <h2 className="text-light mb-6">Ready to Integrate AI Into Your Business?</h2>
+          <p className="text-xl text-light-muted mb-8 max-w-2xl mx-auto">
             Schedule a free consultation to discuss how AI can transform your operations
           </p>
           <a
             href="/contact"
-            className="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-md font-medium transition-colors"
+            className="inline-block bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
           >
             Schedule Consultation
           </a>

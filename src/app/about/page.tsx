@@ -56,11 +56,18 @@ export default function AboutPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-secondary text-secondary-foreground py-20">
-        <div className="container mx-auto px-6">
+      <section className="relative bg-gradient-hero text-light py-24 md:py-28 overflow-hidden">
+        {/* Animated gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 opacity-50" />
+
+        {/* Decorative elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-white mb-6">About Singh Tech</h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <h1 className="text-light mb-6">About Singh Tech</h1>
+            <p className="text-xl text-light-muted leading-relaxed">
               Transforming businesses through innovative web design and AI integration. With 5+ years of
               experience, we bring expertise, creativity, and cutting-edge technology to every project.
             </p>
@@ -108,7 +115,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl border border-border">
+            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-border">
               <Image
                 src="/generated/davinder-singh-headshot.png"
                 alt="Davinder Singh - Founder"
@@ -136,9 +143,9 @@ export default function AboutPage() {
               return (
                 <div
                   key={value.title}
-                  className="bg-card rounded-lg p-8 shadow-md border border-border"
+                  className="bg-card rounded-xl p-8 shadow-lg border border-border hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mb-4">
+                  <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mb-4 shadow-md">
                     <IconComponent className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-card-foreground mb-3">{value.title}</h3>
@@ -165,7 +172,7 @@ export default function AboutPage() {
               {expertise.map((skill) => (
                 <div
                   key={skill}
-                  className="flex items-center gap-3 bg-card rounded-lg p-4 border border-border"
+                  className="flex items-center gap-3 bg-card rounded-xl p-4 border border-border shadow-sm hover:shadow-md transition-shadow duration-200"
                 >
                   <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
                   <span className="text-card-foreground font-medium">{skill}</span>
@@ -177,23 +184,27 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-secondary text-secondary-foreground">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-white mb-6">Let's Work Together</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+      <section className="relative bg-gradient-hero text-light py-24 overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-10 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <h2 className="text-light mb-6">Let's Work Together</h2>
+          <p className="text-xl text-light-muted mb-8 max-w-2xl mx-auto">
             Ready to take your digital presence to the next level? Let's discuss how Singh Tech can help you
             achieve your goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/portfolio"
-              className="inline-block bg-white text-secondary px-8 py-4 rounded-md font-medium hover:bg-gray-100 transition-colors"
+              className="inline-block bg-white text-secondary px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               View Our Work
             </a>
             <a
               href="/contact"
-              className="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-md font-medium transition-colors"
+              className="inline-block bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               Start a Project
             </a>

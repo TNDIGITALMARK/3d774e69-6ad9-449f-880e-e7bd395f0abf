@@ -51,7 +51,7 @@ export default function LoginPage() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-background py-12 px-4">
-      <Card className="w-full max-w-md border-border shadow-sm">
+      <Card className="w-full max-w-md border-border shadow-xl rounded-2xl">
         <CardHeader className="space-y-2">
           <CardTitle className="text-3xl font-semibold text-center tracking-tight">
             Welcome Back
@@ -75,7 +75,7 @@ export default function LoginPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 disabled={loading}
-                className="h-11"
+                className="h-11 rounded-xl"
                 autoComplete="email"
               />
             </div>
@@ -103,7 +103,7 @@ export default function LoginPage() {
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 disabled={loading}
-                className="h-11"
+                className="h-11 rounded-xl"
                 autoComplete="current-password"
               />
             </div>
@@ -116,7 +116,7 @@ export default function LoginPage() {
             )}
 
             {/* Submit Button */}
-            <Button type="submit" className="w-full h-11 font-medium" disabled={loading}>
+            <Button type="submit" className="w-full h-11 font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105" disabled={loading}>
               {loading ? 'Signing in...' : 'Sign In'}
             </Button>
 

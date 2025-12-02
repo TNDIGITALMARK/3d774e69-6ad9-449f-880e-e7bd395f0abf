@@ -77,11 +77,18 @@ export default function PortfolioPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-secondary text-secondary-foreground py-20">
-        <div className="container mx-auto px-6">
+      <section className="relative bg-gradient-hero text-light py-24 md:py-28 overflow-hidden">
+        {/* Animated gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 opacity-50" />
+
+        {/* Decorative elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-white mb-6">Portfolio</h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <h1 className="text-light mb-6">Portfolio</h1>
+            <p className="text-xl text-light-muted leading-relaxed">
               Showcasing successful projects that combine beautiful design with powerful AI-driven functionality.
               Each project demonstrates our commitment to delivering measurable results for our clients.
             </p>
@@ -102,7 +109,7 @@ export default function PortfolioPage() {
               >
                 {/* Project Image */}
                 <div className="flex-1">
-                  <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg border border-border">
+                  <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-border">
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -114,7 +121,7 @@ export default function PortfolioPage() {
 
                 {/* Project Details */}
                 <div className="flex-1">
-                  <div className="inline-block px-3 py-1 bg-accent rounded-full text-sm font-medium text-accent-foreground mb-4">
+                  <div className="inline-block px-3 py-1 bg-accent/90 rounded-full text-sm font-medium text-accent-foreground mb-4 shadow-sm">
                     {project.category} • {project.year}
                   </div>
                   <h2 className="text-foreground mb-4">{project.title}</h2>
@@ -140,7 +147,7 @@ export default function PortfolioPage() {
                   {/* Metrics */}
                   <div className="grid grid-cols-3 gap-4">
                     {Object.entries(project.metrics).map(([key, value]) => (
-                      <div key={key} className="bg-accent/50 rounded-lg p-4 border border-border">
+                      <div key={key} className="bg-accent/50 rounded-xl p-4 border border-border shadow-md">
                         <div className="text-2xl font-bold text-primary mb-1">{value}</div>
                         <div className="text-xs text-muted-foreground capitalize">{key}</div>
                       </div>
@@ -168,7 +175,7 @@ export default function PortfolioPage() {
               const IconComponent = step.icon
               return (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-primary mx-auto mb-4 flex items-center justify-center shadow-lg">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
@@ -181,15 +188,19 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-secondary text-secondary-foreground">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-white mb-6">Ready to Start Your Project?</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+      <section className="relative bg-gradient-hero text-light py-24 overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-10 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <h2 className="text-light mb-6">Ready to Start Your Project?</h2>
+          <p className="text-xl text-light-muted mb-8 max-w-2xl mx-auto">
             Let's discuss how we can bring your vision to life with cutting-edge design and AI technology
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-md font-medium transition-colors"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
           >
             Get in Touch
             <ArrowUpRight className="w-5 h-5" />

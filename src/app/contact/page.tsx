@@ -10,11 +10,18 @@ export default function ContactPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="bg-secondary text-secondary-foreground py-20">
-        <div className="container mx-auto px-6">
+      <section className="relative bg-gradient-hero text-light py-24 md:py-28 overflow-hidden">
+        {/* Animated gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 opacity-50" />
+
+        {/* Decorative elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-white mb-6">Get in Touch</h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <h1 className="text-light mb-6">Get in Touch</h1>
+            <p className="text-xl text-light-muted leading-relaxed">
               Ready to transform your digital presence? Let's discuss your project and explore how Singh Tech
               can help you achieve your goals.
             </p>
@@ -42,7 +49,7 @@ export default function ContactPage() {
                     type="text"
                     id="name"
                     required
-                    className="w-full px-4 py-3 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow duration-200 focus:shadow-md"
                     placeholder="John Doe"
                   />
                 </div>
@@ -55,7 +62,7 @@ export default function ContactPage() {
                     type="email"
                     id="email"
                     required
-                    className="w-full px-4 py-3 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow duration-200 focus:shadow-md"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -67,7 +74,7 @@ export default function ContactPage() {
                   <input
                     type="tel"
                     id="phone"
-                    className="w-full px-4 py-3 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow duration-200 focus:shadow-md"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -79,7 +86,7 @@ export default function ContactPage() {
                   <select
                     id="project"
                     required
-                    className="w-full px-4 py-3 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow duration-200 focus:shadow-md"
                   >
                     <option value="">Select a service</option>
                     <option value="web-design">Web Design & Development</option>
@@ -96,7 +103,7 @@ export default function ContactPage() {
                   </label>
                   <select
                     id="budget"
-                    className="w-full px-4 py-3 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow duration-200 focus:shadow-md"
                   >
                     <option value="">Select budget range</option>
                     <option value="2500-5000">$2,500 - $5,000</option>
@@ -112,7 +119,7 @@ export default function ContactPage() {
                   </label>
                   <select
                     id="timeline"
-                    className="w-full px-4 py-3 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-shadow duration-200 focus:shadow-md"
                   >
                     <option value="">Select timeline</option>
                     <option value="urgent">Urgent (1-2 weeks)</option>
@@ -130,14 +137,14 @@ export default function ContactPage() {
                     id="message"
                     required
                     rows={6}
-                    className="w-full px-4 py-3 rounded-md border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none transition-shadow duration-200 focus:shadow-md"
                     placeholder="Tell us about your project, goals, and any specific requirements..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-4 rounded-md font-medium transition-colors"
+                  className="w-full bg-primary hover:bg-primary-hover text-primary-foreground px-6 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
                 >
                   Submit Inquiry
                 </button>
@@ -153,7 +160,7 @@ export default function ContactPage() {
 
               <div className="space-y-6 mb-10">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
                     <Mail className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
@@ -171,7 +178,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
                     <Phone className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
@@ -186,7 +193,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
                     <Linkedin className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
@@ -206,7 +213,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
                     <MapPin className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
@@ -219,7 +226,7 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0 shadow-md">
                     <Clock className="w-6 h-6 text-accent-foreground" />
                   </div>
                   <div>
@@ -231,7 +238,7 @@ export default function ContactPage() {
               </div>
 
               {/* CTA Box */}
-              <div className="bg-accent rounded-lg p-6 border border-border">
+              <div className="bg-accent/50 rounded-xl p-6 border border-border shadow-md">
                 <h3 className="font-semibold text-foreground mb-2">Quick Response Guarantee</h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   We understand that time is valuable. All inquiries receive a response within 24 hours,
