@@ -32,7 +32,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-bold text-light mb-2 text-lg">Email</h3>
-                  <a href="mailto:contact@singhtech.com" className="text-light-muted hover:text-primary-light transition-colors font-medium">
+                  <a href="mailto:contact@singhtech.com" className="text-light hover:text-light transition-colors font-medium">
                     contact@singhtech.com
                   </a>
                 </div>
@@ -44,7 +44,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-bold text-light mb-2 text-lg">Phone</h3>
-                  <a href="tel:5551234567" className="text-light-muted hover:text-primary-light transition-colors font-medium">
+                  <a href="tel:5551234567" className="text-light hover:text-light transition-colors font-medium">
                     (555) 123-4567
                   </a>
                 </div>

@@ -37,32 +37,32 @@ export function Footer() {
             <h4 className="text-lg font-bold text-light mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-light-muted hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
-                  <span className="w-0 h-0.5 bg-primary-light group-hover:w-4 transition-all duration-300"></span>
+                <Link href="/" className="text-light hover:text-light transition-colors font-medium flex items-center gap-2 group">
+                  <span className="w-0 h-0.5 bg-light group-hover:w-4 transition-all duration-300"></span>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="text-light-muted hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
-                  <span className="w-0 h-0.5 bg-primary-light group-hover:w-4 transition-all duration-300"></span>
+                <Link href="/portfolio" className="text-light hover:text-light transition-colors font-medium flex items-center gap-2 group">
+                  <span className="w-0 h-0.5 bg-light group-hover:w-4 transition-all duration-300"></span>
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-light-muted hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
-                  <span className="w-0 h-0.5 bg-primary-light group-hover:w-4 transition-all duration-300"></span>
+                <Link href="/services" className="text-light hover:text-light transition-colors font-medium flex items-center gap-2 group">
+                  <span className="w-0 h-0.5 bg-light group-hover:w-4 transition-all duration-300"></span>
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-light-muted hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
-                  <span className="w-0 h-0.5 bg-primary-light group-hover:w-4 transition-all duration-300"></span>
+                <Link href="/about" className="text-light hover:text-light transition-colors font-medium flex items-center gap-2 group">
+                  <span className="w-0 h-0.5 bg-light group-hover:w-4 transition-all duration-300"></span>
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-light-muted hover:text-primary-light transition-colors font-medium flex items-center gap-2 group">
-                  <span className="w-0 h-0.5 bg-primary-light group-hover:w-4 transition-all duration-300"></span>
+                <Link href="/contact" className="text-light hover:text-light transition-colors font-medium flex items-center gap-2 group">
+                  <span className="w-0 h-0.5 bg-light group-hover:w-4 transition-all duration-300"></span>
                   Contact
                 </Link>
               </li>
@@ -114,15 +114,15 @@ export function Footer() {
             © {currentYear} Singh Tech. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <Link href="#" className="text-light-subtle hover:text-primary-light transition-colors font-medium">
+            <Link href="#" className="text-light hover:text-light transition-colors font-medium">
               Privacy Policy
             </Link>
             <span className="text-light-subtle opacity-50">•</span>
-            <Link href="#" className="text-light-subtle hover:text-primary-light transition-colors font-medium">
+            <Link href="#" className="text-light hover:text-light transition-colors font-medium">
               Terms of Service
             </Link>
             <span className="text-light-subtle opacity-50">•</span>
-            <Link href="#" className="text-light-subtle hover:text-primary-light transition-colors font-medium">
+            <Link href="#" className="text-light hover:text-light transition-colors font-medium">
               Cookie Policy
             </Link>
           </div>
